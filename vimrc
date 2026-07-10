@@ -1,3 +1,13 @@
+" 1. Tell Vim-Plug what plugins to load
+call plug#begin('~/.vim/plugged')
+Plug 'morhetz/gruvbox'
+call plug#end()
+
+" 2. Core UI Layout settings
+set background=dark
+
+" 3. Apply the Gruvbox theme safely
+autocmd vimenter * colorscheme gruvbox
 
 " --- User Interface ---
 set number                " Show line numbers
@@ -16,6 +26,7 @@ set smartindent           " Intelligent indentation for code
 
 " --- System & Performance ---
 syntax on                 " Enable syntax highlighting (best practice format)
+colorscheme desert
 filetype plugin indent on " Enable file type detection, plugins, and indents
 set mouse=a               " Enable mouse support in all modes
 set clipboard=unnamedplus " Use system clipboard (requires vim-gtk or vim-gnome)
