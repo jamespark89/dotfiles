@@ -10,12 +10,12 @@ set background=dark
 autocmd vimenter * colorscheme gruvbox
 
 " --- User Interface ---
-set number                " Show line numbers
-set relativenumber        " Corrected option name (was relativeLineNumbers)
+" set number                " Show line numbers
+" set relativenumber        " Corrected option name (was relativeLineNumbers)
 set hlsearch              " Highlight search results
 set incsearch             " Show search matches as you type
 set wildmenu              " Visual autocomplete for command menu
-set showmatch             " Highlight matching brackets ((), [], {})
+" set showmatch             " Highlight matching brackets ((), [], {})
 
 " --- Tabs & Indentation ---
 set expandtab             " Convert tabs to spaces
@@ -26,7 +26,6 @@ set smartindent           " Intelligent indentation for code
 
 " --- System & Performance ---
 syntax on                 " Enable syntax highlighting (best practice format)
-colorscheme desert
 filetype plugin indent on " Enable file type detection, plugins, and indents
 set mouse=a               " Enable mouse support in all modes
 set clipboard=unnamedplus " Use system clipboard (requires vim-gtk or vim-gnome)

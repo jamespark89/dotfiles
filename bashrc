@@ -133,3 +133,4 @@ alias cp='cp -iv'                  # Interactive copy (asks before overwriting) 
 alias mv='mv -iv'                  # Interactive move + verbose
 alias rm='rm -iv'                  # Interactive remove + verbose
 eval "$(starship init bash)"
+export PATH="$HOME/.local/bin:$PATH"
