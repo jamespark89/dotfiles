@@ -4,7 +4,7 @@
 
 mkdir -p ~/.config
 
-dotfiles=("bashr" "vimrc")
+dotfiles=("bashrc" "vimrc")
 
 link_file(){
     for dotfile in "$@"; do
@@ -16,5 +16,9 @@ link_file(){
 link_file "${dotfiles[@]}"
 
 ln -sf ~/dotfiles/starship.toml ~/.config/starship.toml
+
+# Run Vim headlessly to install/update plugins without opening the UI
+echo "Installing Vim plugins..."
+vim +PlugInstall +qall
 
 echo "Dotfiles linked!"

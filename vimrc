@@ -1,12 +1,12 @@
-" 1. Tell Vim-Plug what plugins to load
+" Tell Vim-Plug what plugins to load
 call plug#begin('~/.vim/plugged')
 Plug 'morhetz/gruvbox'
 call plug#end()
 
-" 2. Core UI Layout settings
+" Core UI Layout settings
 set background=dark
 
-" 3. Apply the Gruvbox theme safely
+" Apply the Gruvbox theme safely
 autocmd vimenter * colorscheme gruvbox
 
 " --- User Interface ---
