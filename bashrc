@@ -136,3 +136,7 @@ alias k='kubectl'
 source <(kubectl completion bash)
 complete -o default -F __start_kubectl k
 
+# containerlab
+alias clab='sudo containerlab'
+source <(containerlab completion bash)
+complete -o default -F __start_containerlab clab

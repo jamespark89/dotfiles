@@ -11,7 +11,7 @@ fi
 # Description: Link dotfiles to home directory
 mkdir -p ~/.config
 
-dotfiles=("bashrc" "vimrc")
+dotfiles=("bashrc" "vimrc" "tmux.conf")
 
 link_file(){
     for dotfile in "$@"; do
